@@ -1,20 +1,11 @@
-package com.ustc.se.bbs.dao;
+package com.ustc.se.bbs.service;
 
 import java.util.TreeSet;
 
 import com.ustc.se.bbs.entity.Message;
 
+public interface MessageService {
 
-/**
- * 
- *MessageDao.java
- *@Author Administrator
- *CreateTime 下午11:26:16
- *Updater Docki
- *UpdateTime 2017-05-03
- */
-public interface MessageDao {
-	
 	/**
 	 * 根据messageID查询数据库中对应的message
 	 * @param messageID
@@ -74,6 +65,5 @@ public interface MessageDao {
 	 * @return
 	 */
 	public int deleteMessageUnread(int messageUnread);
-	
 	
 }
